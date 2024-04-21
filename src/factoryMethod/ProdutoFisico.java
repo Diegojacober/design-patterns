@@ -1,2 +1,4 @@
-package factoryMethod;public class ProdutoFisico {
+package factoryMethod;
+
+public class ProdutoFisico extends Produto{
 }

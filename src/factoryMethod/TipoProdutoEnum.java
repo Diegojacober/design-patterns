@@ -1,2 +1,6 @@
-package factoryMethod;public class TipoProdutoEnum {
+package factoryMethod;
+
+public enum TipoProdutoEnum {
+    FISICO,
+    DIGITAL;
 }
