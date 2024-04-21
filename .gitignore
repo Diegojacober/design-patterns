@@ -2,6 +2,8 @@
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
+.idea
+design-patterns.iml
 
 ### Eclipse ###
 .apt_generated
