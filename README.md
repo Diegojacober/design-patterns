@@ -80,6 +80,8 @@ Isso é útil quando você tem um objeto que precisa ser compartilhado por todo 
 
 ### Prototype `Creational`
 
+- O Prototype é um padrão de projeto que permite copiar objetos existentes sem fazer seu código ficar dependente de suas classes.
+
 Imagine que você tem um brinquedo, digamos, um carrinho de controle remoto. Agora, você quer fazer outro carrinho exatamente igual, com as mesmas características, mas sem começar do zero. O padrão Prototype é como fazer uma cópia exata desse carrinho sem precisar construí-lo do início.
 
 Na programação, o padrão Prototype permite que você crie novos objetos copiando um objeto existente, chamado de protótipo. Em vez de criar um novo objeto e definir todas as suas características novamente, você simplesmente copia o protótipo e faz as modificações necessárias, se desejar.
