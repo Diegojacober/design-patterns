@@ -77,3 +77,13 @@ Isso é útil quando você tem um objeto que precisa ser compartilhado por todo 
 - **Singleton Enum**: Aqui, imagine que você tem um bolo que é sempre preparado do mesmo jeito, sem precisar decidir entre diferentes receitas. O Singleton Enum aproveita a garantia de que os valores de enumeração em Java são instanciados apenas uma vez em um contexto de carregamento de classe. Isso garante a criação de um singleton seguro e eficiente, sem preocupações com concorrência ou inicialização preguiçosa.
 
 **Exemplo:** Neste exemplo temos uma agenda, onde queremos deixar alguns dias como disponiveis ou não, onde temos que sempre ter a mesma instancia da agenda para ocupar os dias em sequência. Temos exemplo em Eager, Lazy e com Enum. 
+
+### Prototype `Creational`
+
+Imagine que você tem um brinquedo, digamos, um carrinho de controle remoto. Agora, você quer fazer outro carrinho exatamente igual, com as mesmas características, mas sem começar do zero. O padrão Prototype é como fazer uma cópia exata desse carrinho sem precisar construí-lo do início.
+
+Na programação, o padrão Prototype permite que você crie novos objetos copiando um objeto existente, chamado de protótipo. Em vez de criar um novo objeto e definir todas as suas características novamente, você simplesmente copia o protótipo e faz as modificações necessárias, se desejar.
+
+Isso é útil quando você tem objetos complexos ou caros de se criar, e deseja uma maneira fácil de criar novas instâncias baseadas em um modelo existente.
+
+**Exemplo:** Temos de código exemplo uma possivel aplicação de interface onde temos botões com configurações pré-definidas, e queremos clonar esses botões, não precisamos criar uma classe para cada tipo de botão nem instanciar um novo tipo e setar todas as configurações novamente.
