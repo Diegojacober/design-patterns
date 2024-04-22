@@ -57,3 +57,23 @@ Você pode ter uma classe base chamada "Factory" que possui um método chamado "
 A "CarFactory" sabe como criar carros e pode produzir diferentes modelos de carros, como sedan, SUV e caminhão. Quando você precisa de um carro, você chama o método "createProduct" da "CarFactory" e ela retorna o tipo certo de carro que você precisa.
 
 **Exemplo:** Neste exemplo temos 2 tipos de Produtos, Digitais e Físicos, ambos herdam da classe mãe "Produto", se quisermos setar o tipo de Produto precisamos chamar a função "setPossuiDimensoesFisicas", o que está suscetível a erros de quem esta usando a classe como cliente. Para contornar isso, criamos uma Fábrica, onde possui um metodo estático getInstance, onde passamos apenas o tipo do produto e ele retorna uma instância correta do objeto que desejamos.
+
+## Singleton `Creational`
+
+- O Singleton é um padrão de projeto que permite a você garantir que uma classe tenha apenas uma instância, enquanto provê um ponto de acesso global para essa instância. Resolve o problema do principio de responsabilidade unica (o **S** de **S**OLID)
+
+Imagine que você tem uma casa com uma sala que só pode ser acessada por uma chave especial. O padrão Singleton garante que, no mundo da programação, uma classe tenha apenas uma instância, assim como só há uma chave para essa sala especial na casa.
+
+Isso é útil quando você tem um objeto que precisa ser compartilhado por todo o seu programa, como um registro de eventos ou uma conexão com um banco de dados. Com o Singleton, você pode ter certeza de que sempre estará trabalhando com a mesma instância desse objeto em todo o seu código.
+
+É como garantir que, independentemente de quantas vezes você tente abrir a sala especial, você sempre acabará na mesma sala, porque só há uma chave para ela.
+
+#### Tipos de Singleton
+
+- **Singleton Eager**: Imagine que você tem um bolo pronto antes mesmo de sentir vontade de comê-lo. O Singleton Eager cria a instância única da classe assim que o programa é iniciado, independentemente de ser usada imediatamente ou não. Isso garante que a instância esteja sempre disponível, mas pode desperdiçar recursos se a classe for complexa e não for necessária no início do programa.
+
+- **Singleton Lazy**: Agora, pense em fazer o bolo apenas quando realmente tiver vontade de comê-lo. O Singleton Lazy cria a instância única da classe somente quando é solicitada pela primeira vez. Isso economiza recursos, pois a instância é criada apenas quando necessária, mas pode causar problemas de concorrência em ambientes multithread, a menos que seja tratado corretamente.
+
+- **Singleton Enum**: Aqui, imagine que você tem um bolo que é sempre preparado do mesmo jeito, sem precisar decidir entre diferentes receitas. O Singleton Enum aproveita a garantia de que os valores de enumeração em Java são instanciados apenas uma vez em um contexto de carregamento de classe. Isso garante a criação de um singleton seguro e eficiente, sem preocupações com concorrência ou inicialização preguiçosa.
+
+**Exemplo:** Neste exemplo temos uma agenda, onde queremos deixar alguns dias como disponiveis ou não, onde temos que sempre ter a mesma instancia da agenda para ocupar os dias em sequência. Temos exemplo em Eager, Lazy e com Enum. 
