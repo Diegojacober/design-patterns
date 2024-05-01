@@ -9,8 +9,9 @@ import java.time.LocalDate;
 public class TestPessoaComProxy {
     public static void main(String[] args) {
 
-
-        PessoaService pessoaService = new PessoaService(new PessoaRepositoryProxy());
+        NovoPessoaRepositoryProxy novoPessoaRepositoryProxy = new NovoPessoaRepositoryProxy();
+        PessoaRepositoryProxy pessoaRepositoryProxy = new PessoaRepositoryProxy();
+        PessoaService pessoaService = new PessoaService(novoPessoaRepositoryProxy);
 
 
         Person pessoa = new Person.PersonBuilder()

@@ -8,11 +8,12 @@ Este repositório contém código de exemplos e explicações dos principais tip
 
 ## Tópicos
 
-- [O que são Design Patternss?](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
-- [Tipos de Design Patterns](https://github.com/matiassingers/awesome-readme)
-- [Builder](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
-- [Factory Method](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
-- [Singleton](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
+- [O que são Design Patternss?](https://github.com/Diegojacober/design-patterns?tab=readme-ov-file#o-que-s%C3%A3o-design-patterns)
+- [Tipos de Design Patterns](https://github.com/Diegojacober/design-patterns?tab=readme-ov-file#tipos-de-design-patterns)
+- [Builder](https://github.com/Diegojacober/design-patterns?tab=readme-ov-file#builder-creational)
+- [Factory Method](https://github.com/Diegojacober/design-patterns?tab=readme-ov-file#factory-method-creational)
+- [Singleton](https://github.com/Diegojacober/design-patterns?tab=readme-ov-file#singleton-creational)
+- [Proxy](https://github.com/Diegojacober/design-patterns?tab=readme-ov-file#proxy-structural)
 
 
 ## O que são Design Patterns?
@@ -89,3 +90,15 @@ Na programação, o padrão Prototype permite que você crie novos objetos copia
 Isso é útil quando você tem objetos complexos ou caros de se criar, e deseja uma maneira fácil de criar novas instâncias baseadas em um modelo existente.
 
 **Exemplo:** Temos de código exemplo uma possivel aplicação de interface onde temos botões com configurações pré-definidas, e queremos clonar esses botões, não precisamos criar uma classe para cada tipo de botão nem instanciar um novo tipo e setar todas as configurações novamente.
+
+### Proxy `Structural`
+
+- O Proxy permite que você forneça um substituto ou um espaço reservado para outro objeto. Um proxy controla o acesso ao objeto original, permitindo que você faça algo ou antes ou depois do pedido chegar ao objeto original.
+
+Imagine que deseja ir a uma festa exclusiva, mas não pode simplesmente aparecer na porta. Em vez disso, você precisa de alguém para interagir com os organizadores da festa por você e garantir sua entrada. Esse "alguém" atuando em seu nome é como um proxy.
+
+Na programação, o padrão Proxy funciona de maneira semelhante. Ele atua como um intermediário entre você (o cliente) e o objeto que você deseja acessar. Isso pode ser útil em várias situações, como controle de acesso, verificação de autorização, ou para adicionar funcionalidades adicionais sem modificar diretamente o objeto original.
+
+digamos que você tenha uma imagem grande que leva muito tempo para carregar. Em vez de carregá-la imediatamente, você pode usar um proxy para exibir uma versão menor da imagem primeiro e, em seguida, carregar a versão completa apenas quando necessário.
+
+**Exemplo:** Temos o seguinte desafio, criar logs para uma aplicação ja existente, mas temos como limitação, não poder mexer diretamente na classe responsável pela interação com o banco de dados (repository) para contornar o desafio, criamos uma classe que herda o repository e estende a interface de proxy e implementamos o método como desejamos sem comprometer o que ja havia sido feito anteriormente.

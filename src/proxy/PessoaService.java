@@ -7,7 +7,7 @@ import proxy.solucao.ProxyPessoa;
 public class PessoaService {
     private ProxyPessoa pessoaRepository;
 
-    public PessoaService(PessoaRepositoryProxy pessoaRepository) {
+    public PessoaService(ProxyPessoa pessoaRepository) {
         this.pessoaRepository = pessoaRepository;
     }
 
