@@ -14,6 +14,7 @@ Este repositório contém código de exemplos e explicações dos principais tip
 - [Factory Method](https://github.com/Diegojacober/design-patterns?tab=readme-ov-file#factory-method-creational)
 - [Singleton](https://github.com/Diegojacober/design-patterns?tab=readme-ov-file#singleton-creational)
 - [Proxy](https://github.com/Diegojacober/design-patterns?tab=readme-ov-file#proxy-structural)
+- [Adapter](https://github.com/Diegojacober/design-patterns?tab=readme-ov-file#adapter-structural)
 
 
 ## O que são Design Patterns?
@@ -102,3 +103,15 @@ Na programação, o padrão Proxy funciona de maneira semelhante. Ele atua como 
 digamos que você tenha uma imagem grande que leva muito tempo para carregar. Em vez de carregá-la imediatamente, você pode usar um proxy para exibir uma versão menor da imagem primeiro e, em seguida, carregar a versão completa apenas quando necessário.
 
 **Exemplo:** Temos o seguinte desafio, criar logs para uma aplicação ja existente, mas temos como limitação, não poder mexer diretamente na classe responsável pela interação com o banco de dados (repository) para contornar o desafio, criamos uma classe que herda o repository e estende a interface de proxy e implementamos o método como desejamos sem comprometer o que ja havia sido feito anteriormente.
+
+### Adapter `Structural`
+
+- O Adapter é um padrão de projeto estrutural que permite objetos com interfaces incompatíveis colaborarem entre si.
+
+O padrão Adapter é como esse adaptador. Ele permite que objetos com interfaces incompatíveis trabalhem juntos. Por exemplo, se você tem uma classe que espera uma interface específica para funcionar corretamente, mas deseja usar outra classe que tenha uma interface diferente, você pode usar um adaptador para fazer a ponte entre elas.
+
+Em termos mais técnicos, o adaptador envolve um objeto existente e fornece uma interface diferente para ele, para que possa ser usado de maneira transparente por outros objetos que esperam essa nova interface.
+
+Em resumo, o padrão Adapter é como um adaptador físico que permite que dispositivos com diferentes interfaces se conectem. Ele ajuda a integrar classes ou objetos que, de outra forma, não poderiam trabalhar juntos devido a diferenças em suas interfaces.
+
+**Exemplo:** No nosso exemplo de código temos uma classe que interaje com um jar, esse jar serve e é util porem não funciona da forma que desejamos, então utilizamos os métodos já existentes dele para criarmos uma adaptação. 
