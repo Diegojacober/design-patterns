@@ -15,6 +15,7 @@ Este repositório contém código de exemplos e explicações dos principais tip
 - [Singleton](https://github.com/Diegojacober/design-patterns?tab=readme-ov-file#singleton-creational)
 - [Proxy](https://github.com/Diegojacober/design-patterns?tab=readme-ov-file#proxy-structural)
 - [Adapter](https://github.com/Diegojacober/design-patterns?tab=readme-ov-file#adapter-structural)
+- [Strategy](https://github.com/Diegojacober/design-patterns?tab=readme-ov-file#strategy-behavioral)
 
 
 ## O que são Design Patterns?
@@ -115,3 +116,22 @@ Em termos mais técnicos, o adaptador envolve um objeto existente e fornece uma 
 Em resumo, o padrão Adapter é como um adaptador físico que permite que dispositivos com diferentes interfaces se conectem. Ele ajuda a integrar classes ou objetos que, de outra forma, não poderiam trabalhar juntos devido a diferenças em suas interfaces.
 
 **Exemplo:** No nosso exemplo de código temos uma classe que interaje com um jar, esse jar serve e é util porem não funciona da forma que desejamos, então utilizamos os métodos já existentes dele para criarmos uma adaptação. 
+
+### Strategy `Behavioral`
+
+- O Strategy permite que você defina uma família de algoritmos, coloque-os em classes separadas, e faça os objetos deles intercambiáveis.
+
+Imagine que você está indo para a escola e tem diferentes maneiras de chegar lá: você pode ir de carro, de bicicleta ou a pé. Cada uma dessas maneiras é uma estratégia diferente para chegar ao mesmo destino, mas todas levam você à escola.
+
+O padrão Strategy é como ter várias estratégias para resolver o mesmo problema. Em programação, você pode ter diferentes maneiras de realizar uma tarefa e quer escolher a melhor estratégia dependendo da situação.
+
+Por exemplo, digamos que você esteja desenvolvendo um jogo e tem diferentes algoritmos para o comportamento dos inimigos. Você pode ter uma estratégia para inimigos que atacam furtivamente, outra para inimigos que atacam em grupos e outra para inimigos que atacam à distância.
+
+Com o padrão Strategy, você pode facilmente alternar entre essas estratégias sem precisar alterar o código principal do jogo. Isso torna o código mais flexível e fácil de manter, porque você pode adicionar novas estratégias ou alterar as existentes sem afetar o resto do sistema.
+
+O strategy ajuda com que o padrão Open closed principle (S**O**LID), fazendo com que as novas implementações sejam implementadas através de interfaces, sem modificar o código original.
+
+**Exemplo:** No exemplo de código, temos o seguinte problemas, diversos tipos de funcionários e temos que reajustar seus salários, para não termos que colocar diversos if e else, modificando sempre o código. Para evitar esse problema implementamos o Strategy onde criamos novas modificações sem ter que modificar a classe principal. 
+
+
+
