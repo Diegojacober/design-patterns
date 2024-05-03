@@ -131,7 +131,18 @@ Com o padrão Strategy, você pode facilmente alternar entre essas estratégias 
 
 O strategy ajuda com que o padrão Open closed principle (S**O**LID), fazendo com que as novas implementações sejam implementadas através de interfaces, sem modificar o código original.
 
-**Exemplo:** No exemplo de código, temos o seguinte problemas, diversos tipos de funcionários e temos que reajustar seus salários, para não termos que colocar diversos if e else, modificando sempre o código. Para evitar esse problema implementamos o Strategy onde criamos novas modificações sem ter que modificar a classe principal. 
+**Exemplo:** No exemplo de código, temos o seguinte problema, diversos tipos de funcionários e temos que reajustar seus salários, para não termos que colocar diversos if e else, modificando sempre o código. Para evitar esse problema implementamos o Strategy onde criamos novas modificações sem ter que modificar a classe principal. 
 
 
+### Chain of Responsability `Behavioral`
+
+- O Chain of Responsibility permite que você passe pedidos por uma corrente de handlers. Ao receber um pedido, cada handler decide se processa o pedido ou o passa adiante para o próximo handler na corrente.
+
+O padrão Chain of Responsibility funciona de maneira onde você tem uma cadeia de objetos, e cada objeto na cadeia tem a chance de lidar com uma solicitação. Se o primeiro objeto não puder lidar com a solicitação, ele passa para o próximo objeto na cadeia, e assim por diante, até que alguém possa lidar com ela.
+
+Por exemplo, digamos que você tenha uma aplicação com vários filtros de segurança. Cada filtro verifica se uma solicitação é segura e a encaminha para o próximo filtro se não puder lidar com ela. Isso permite que você adicione ou remova filtros facilmente sem afetar o restante da aplicação.
+
+Em resumo, o padrão Chain of Responsibility é como uma fila onde cada objeto tem a oportunidade de lidar com uma solicitação, passando-a adiante se não puder lidar com ela. Isso torna o código mais flexível e modular, facilitando a adição ou remoção de funcionalidades.
+
+**Exemplo:** No exemplo de código, temos um sistema para aplicar descontos, porem cada desconto deve atender um requisito, se ele atender aplica, se não para o proximo da corrente.
 
