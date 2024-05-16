@@ -168,4 +168,3 @@ As subclasses "Sanduíche de Presunto" e "Sanduíche de Vegetais" podem implemen
 - Todo o repositório é baseado no estudo e auxilio de 3 plataformas:
     - [Refactoring guru](https://refactoring.guru/pt-br)
     - [Adatech - curso de design patterns em Java](https://ada.tech/)
-    - ChatGPT
