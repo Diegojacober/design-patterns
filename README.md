@@ -17,6 +17,7 @@ Este repositório contém código de exemplos e explicações dos principais tip
 - [Adapter](https://github.com/Diegojacober/design-patterns?tab=readme-ov-file#adapter-structural)
 - [Strategy](https://github.com/Diegojacober/design-patterns?tab=readme-ov-file#strategy-behavioral)
 - [Template method](https://github.com/Diegojacober/design-patterns?tab=readme-ov-file#template-method-behavioral)
+- [Fontes](https://github.com/Diegojacober/design-patterns?tab=readme-ov-file#fonts)
 
 
 ## O que são Design Patterns?
@@ -162,3 +163,9 @@ As subclasses "Sanduíche de Presunto" e "Sanduíche de Vegetais" podem implemen
 
 **Exemplo:** No exemplo de código, temos um que definir se os carros tiveram a manutenção concedida, levando em consideração uma logica de negócio e se eles são de luxo ou não. Para não termos que duplicar os metodos iguais criamos um template e apenas forçamos a escrita do metodo que implementa a lógica de negócio
 
+#### Fontes
+
+- Todo o repositório é baseado no estudo e auxilio de 3 plataformas:
+    - [Refactoring guru](https://refactoring.guru/pt-br)
+    - [Adatech - curso de design patterns em Java](https://ada.tech/)
+    - ChatGPT
