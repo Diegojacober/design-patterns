@@ -16,6 +16,7 @@ Este repositório contém código de exemplos e explicações dos principais tip
 - [Proxy](https://github.com/Diegojacober/design-patterns?tab=readme-ov-file#proxy-structural)
 - [Adapter](https://github.com/Diegojacober/design-patterns?tab=readme-ov-file#adapter-structural)
 - [Strategy](https://github.com/Diegojacober/design-patterns?tab=readme-ov-file#strategy-behavioral)
+- [Template method](https://github.com/Diegojacober/design-patterns?tab=readme-ov-file#template-method-behavioral)
 
 
 ## O que são Design Patterns?
@@ -145,4 +146,19 @@ Por exemplo, digamos que você tenha uma aplicação com vários filtros de segu
 Em resumo, o padrão Chain of Responsibility é como uma fila onde cada objeto tem a oportunidade de lidar com uma solicitação, passando-a adiante se não puder lidar com ela. Isso torna o código mais flexível e modular, facilitando a adição ou remoção de funcionalidades.
 
 **Exemplo:** No exemplo de código, temos um sistema para aplicar descontos, porem cada desconto deve atender um requisito, se ele atender aplica, se não para o proximo da corrente.
+
+### Template method `Behavioral`
+
+- O Template Method define o esqueleto de um algoritmo na superclasse mas deixa as subclasses sobrescreverem etapas específicas do algoritmo sem modificar sua estrutura.
+
+É como uma receita para fazer sanduíches. Ele define o esqueleto de um algoritmo em uma classe base, deixando algumas etapas específicas para serem implementadas pelas subclasses. A classe base controla a ordem das etapas, mas permite que as subclasses personalizem partes do processo.
+
+Por exemplo, na classe base "Sanduíche", você pode ter um método para fazer um sanduíche que sempre segue esses passos:
+
+Escolher o pão
+Adicionar ingredientes
+Cortar o sanduíche
+As subclasses "Sanduíche de Presunto" e "Sanduíche de Vegetais" podem implementar suas próprias versões de "Adicionar ingredientes", enquanto ainda seguem o esqueleto definido pela classe base.
+
+**Exemplo:** No exemplo de código, temos um que definir se os carros tiveram a manutenção concedida, levando em consideração uma logica de negócio e se eles são de luxo ou não. Para não termos que duplicar os metodos iguais criamos um template e apenas forçamos a escrita do metodo que implementa a lógica de negócio
 

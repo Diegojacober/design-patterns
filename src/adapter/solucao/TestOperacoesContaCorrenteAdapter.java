@@ -11,7 +11,7 @@ public class TestOperacoesContaCorrenteAdapter {
         JarOperacoesContaCorrenteAdapter jarContaAdapter = new JarOperacoesContaCorrenteAdapter(jarOperacoesContaCorrente);
         ClientJarOperacoesContaCorrenteAdapter clientJarOperacoesContaCorrente = new ClientJarOperacoesContaCorrenteAdapter(jarContaAdapter);
 
-        var valorPretendidoParaSaque = BigDecimal.valueOf(151);
+        BigDecimal valorPretendidoParaSaque = BigDecimal.valueOf(151);
 
         clientJarOperacoesContaCorrente.sacar(valorPretendidoParaSaque);
 

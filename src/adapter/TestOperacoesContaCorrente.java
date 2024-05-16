@@ -10,7 +10,7 @@ public class TestOperacoesContaCorrente {
         JarOperacoesContaCorrente jarConta = new JarOperacoesContaCorrente();
         ClientJarOperacoesContaCorrente clientJarOperacoesContaCorrente = new ClientJarOperacoesContaCorrente(jarConta);
 
-        var valorPretendidoParaSaque = BigDecimal.valueOf(151);
+        BigDecimal valorPretendidoParaSaque = BigDecimal.valueOf(151);
 
         // depende do programador usar o if e a função de validar o saldo
         if (clientJarOperacoesContaCorrente.validaSaldo(valorPretendidoParaSaque)) {
